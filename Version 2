@@ -1,0 +1,14 @@
+from datetime import date
+
+first_name = input("Enter student first name: ")
+last_name = input("Enter student last name: ")
+section = input("Enter section: ")
+event_name = input("Enter event name: ")
+event_year = int(input("Enter event year: "))
+event_month = int(input("Enter event month (1-12): "))
+event_day = int(input("Enter event day: "))
+
+full_name = f"{first_name.strip().title()} {last_name.strip().title()}"
+name_code = full_name.upper()
+clean_section = section.strip().upper()
+clean_event = event_name.strip().title()
